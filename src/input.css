@@ -28,14 +28,12 @@
         row-gap: 1.5rem;
         width: 100%;
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 10rem 90vh 70vh 100vh 75vh 35vh;
+        grid-template-rows: 10rem 90vh 70vh 100vh 75vh 40vh 100vh;
         /* height: 100vh; */
         /* background-color: #F7FBFF; */
         /* background-color: rgb(247, 251, 255); */
 
     }
-
-
 
     .nav-header li:hover {
         @apply text-mainColor
@@ -65,9 +63,8 @@
         @apply scale-50 transition-all
     }
 
-
     .header {
-        background-color: blue;
+        background-color: #31a9dc;
     }
 
     .box__feature {
@@ -86,7 +83,19 @@
         @apply w-[3rem] h-[2rem] fill-whiteColor
     }
 
+    .advantage__box {
+        @apply grid grid-cols-1 content-center justify-items-center
+    }
 
+    .advantage__icon {
+        @apply w-[6rem] h-[6rem] mb-8 fill-iconColor
+    }
 
+    .advantage__par-big {
+        @apply text-fontColor font-bold text-num mb-4
+    }
 
+    .advantage__par-small {
+        @apply text-parColor text-2xl font-bold
+    }
 }

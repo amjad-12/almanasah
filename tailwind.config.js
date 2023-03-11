@@ -5,13 +5,11 @@ module.exports = {
     extend: {
       colors: {
         mainColor: '#147dab',
+        iconColor: '#31a9dc',
         fontColor: '#2a3a92',
         parColor: '#68747c',
         whiteColor: '#ffffff',
         backColor: '#F7FBFF'
-      },
-      borderRadius: {
-        'md': '20px'
       },
       lineHeight: {
         '10': '3.2rem',
@@ -20,11 +18,13 @@ module.exports = {
       },
       fontSize: {
         pxl: '1.7rem',
+        num: '4rem'
         
       },
       gridTemplateColumns: {
         'features': 'repeat(auto-fit, minmax(18.7rem, .5fr))',
-        'feature': '16rem'
+        'feature': '16rem',
+        'advantage': 'repeat(auto-fit, minmax(10rem, 1fr))'
       },
       gridTemplateRows: {
         'feature': 'repeat(2, 6.5rem)'
