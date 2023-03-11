@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500;600;700&family=Inter:wght@400;700&family=Noto+Kufi+Arabic:wght@300;400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    *,
+    *::after,
+    *::before {
+        box-sizing: inherit;
+    }
+
+    html {
+        direction: rtl;
+
+        font-size: 62.5%;
+        font-family: 'Noto Kufi Arabic', sans-serif;
+    }
+
+    .Mycontainer {
+        display: grid;
+        row-gap: 1.5rem;
+        width: 100%;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 10rem 90vh 70vh 100vh 75vh 35vh;
+        /* height: 100vh; */
+        /* background-color: #F7FBFF; */
+        /* background-color: rgb(247, 251, 255); */
+
+    }
+
+
+
+    .nav-header li:hover {
+        @apply text-mainColor
+    }
+
+    .btn_outline {
+        @apply border rounded-full p-3 border-mainColor text-mainColor flex justify-center
+    }
+
+    .btn_outline .btn_outline:hover {
+        @apply text-red-500
+    }
+
+    .btn_full {
+        @apply text-2xl font-bold border rounded-xl p-3 bg-mainColor  border-mainColor text-whiteColor h-10 w-72 flex justify-center items-center
+    }
+
+    .btn_full .btn_full:hover {
+        @apply bg-red-300
+    }
+
+    .btn_arrow {
+        @apply text-2xl font-bold border rounded-xl p-3 bg-mainColor  border-mainColor h-[1.5rem] w-[6rem] flex justify-center items-center
+    }
+
+    .btn_arrow .btn_arrow:hover {
+        @apply scale-50 transition-all
+    }
+
+
+    .header {
+        background-color: blue;
+    }
+
+    .box__feature {
+        @apply grid grid-cols-feature grid-rows-feature justify-items-center items-center border-8 border-solid rounded-me hover:scale-110 transition-all duration-500
+    }
+
+    .icon__feature {
+        @apply w-[5.3rem] h-[5.3rem] fill-mainColor row-start-1 row-end-2
+    }
+
+    .text__feature {
+        @apply text-2xl font-bold text-fontColor 
+    }
+
+    .icon__arrow {
+        @apply w-[3rem] h-[2rem] fill-whiteColor
+    }
+
+
+
+
+}
