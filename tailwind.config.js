@@ -6,10 +6,12 @@ module.exports = {
       colors: {
         mainColor: '#147dab',
         iconColor: '#31a9dc',
+        blueColor: '#73c8ed',
         fontColor: '#2a3a92',
         parColor: '#68747c',
         whiteColor: '#ffffff',
-        backColor: '#F7FBFF'
+        backColor: '#F7FBFF',
+        goldColor: '#eee52a',
       },
       lineHeight: {
         '10': '3.2rem',
@@ -30,7 +32,7 @@ module.exports = {
       },
       gridTemplateRows: {
         'feature': 'repeat(2, 6.5rem)',
-        'plans': 'repeat(4, 1fr)'
+        'plan': 'repeat(3, 1fr)'
       },
       borderRadius: {
         'me': '2.5rem',

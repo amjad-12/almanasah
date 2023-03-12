@@ -98,4 +98,32 @@
     .advantage__par-small {
         @apply text-parColor text-2xl font-bold
     }
+
+
+    /* ///////////////////////////////////////////////// */
+    /* PLANS STYLE */
+
+    .plan__box {
+        @apply grid grid-cols-1 grid-rows-plan justify-items-center bg-backColor  rounded-me
+    }
+
+    .plan__icon {
+        @apply w-[6rem] h-[6rem] self-end
+    }
+
+    .plan__name {
+        @apply font-bold text-plan text-mainColor self-center
+    }
+
+    .plan__price-start {
+        @apply text-3xl text-parColor font-medium mb-4
+    }
+
+    .plan__price-number {
+        @apply text-3xl text-mainColor font-semibold
+    }
+
+    .plan__price-currency {
+        @apply text-2xl text-mainColor font-semibold
+    }
 }
