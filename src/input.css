@@ -159,6 +159,10 @@
         @apply focus:border-4 transition-all duration-75 rounded-3xl bg-backColor text-2xl text-gray-400 font-bold outline-none
     }
 
+    .company__icon {
+        @apply w-[5rem] h-[5rem] mb-8 fill-iconColor
+    }
+
     .footer__li {
         @apply text-footerliColor text-2xl font-bold
     }

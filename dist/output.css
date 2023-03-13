@@ -685,6 +685,13 @@ html {
   border-width: 4px;
 }
 
+.company__icon{
+  margin-bottom: 2rem;
+  height: 5rem;
+  width: 5rem;
+  fill: #31a9dc;
+}
+
 .footer__li{
   font-size: 1.5rem;
   line-height: 2rem;
