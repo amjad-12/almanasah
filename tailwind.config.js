@@ -8,6 +8,8 @@ module.exports = {
         iconColor: '#31a9dc',
         blueColor: '#73c8ed',
         fontColor: '#2a3a92',
+        footerColor: '#1D2E73',
+        footerliColor: '#1ba9e6',
         parColor: '#68747c',
         whiteColor: '#ffffff',
         backColor: '#F7FBFF',
@@ -28,7 +30,8 @@ module.exports = {
         'features': 'repeat(auto-fit, minmax(18.7rem, .5fr))',
         'feature': '16rem',
         'advantage': 'repeat(auto-fit, minmax(10rem, 1fr))',
-        'plans': 'repeat(auto-fit, minmax(25rem, 1fr))'
+        'plans': 'repeat(auto-fit, minmax(25rem, 1fr))',
+        'footer': 'repeat(auto-fit, minmax(15rem, 1fr))'
       },
       gridTemplateRows: {
         'feature': 'repeat(2, 6.5rem)',
@@ -36,10 +39,9 @@ module.exports = {
       },
       borderRadius: {
         'me': '2.5rem',
-        'me2': '4rem'
+        'me2': '4rem',
       }
     },
   },
-  plugins: [],
+  plugins: []
 }
-

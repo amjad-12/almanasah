@@ -3,6 +3,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+    .my-backface-visibility {
+      backface-visibility: hidden;
+    }
+}
+
 @layer base {
     * {
         margin: 0;
@@ -25,10 +31,10 @@
 
     .Mycontainer {
         display: grid;
-        row-gap: 1.5rem;
+        /* row-gap: 1.5rem; */
         width: 100%;
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 10rem 90vh 70vh 100vh 75vh 40vh 100vh;
+        grid-template-rows: 10rem 90vh 70vh 100vh 75vh 40vh 100vh 100vh 45vh;
         /* height: 100vh; */
         /* background-color: #F7FBFF; */
         /* background-color: rgb(247, 251, 255); */
@@ -104,8 +110,29 @@
     /* PLANS STYLE */
 
     .plan__box {
-        @apply grid grid-cols-1 grid-rows-plan justify-items-center bg-backColor  rounded-me
+        @apply  h-full w-full rounded-me my-backface-visibility
     }
+
+    .plan__box--front {
+        @apply bg-backColor grid grid-cols-1 grid-rows-plan justify-items-center
+    }
+
+    .plan__box--back {
+        transform: rotateY(180deg);
+        background-color: pink;
+    }
+
+    .plan__box--front-effect {
+        transform: rotateY(-180deg);
+    }
+
+    .plan__box--back-effect {
+        transform: rotateY(0);
+    }
+
+
+
+    
 
     .plan__icon {
         @apply w-[6rem] h-[6rem] self-end
@@ -125,5 +152,14 @@
 
     .plan__price-currency {
         @apply text-2xl text-mainColor font-semibold
+    }
+
+
+    .contact__input {
+        @apply focus:border-4 transition-all duration-75 rounded-3xl bg-backColor text-2xl text-gray-400 font-bold outline-none
+    }
+
+    .footer__li {
+        @apply text-footerliColor text-2xl font-bold
     }
 }

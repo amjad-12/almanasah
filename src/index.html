@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/dist/output.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="../img/shortcut-icon.png">
 </head>
 
 <body class="Mycontainer">
@@ -215,8 +216,8 @@
 
         <div class="row-start-3 row-end-6 col-start-1 col-end-7 gap-14 grid grid-cols-plans">
 
-            <!-- <div> -->
-                <div class="plan__box">
+            <div>
+                <div class="plan__box plan__box--front">
                     <svg class="plan__icon fill-iconColor">
                         <use xlink:href="../img/sprite.svg#icon-qrcode"></use>
                     </svg>
@@ -227,8 +228,8 @@
                         <span class="plan__price-currency">د.ك / سنة</span>
                     </div>
                 </div>
-                
-                <!-- <div class="plan__box">
+
+                <!-- <div class="plan__box plan__box--front">
                     <svg class="plan__icon fill-iconColor">
                         <use xlink:href="../img/sprite.svg#icon-qrcode"></use>
                     </svg>
@@ -239,62 +240,159 @@
                         <span class="plan__price-currency">د.ك / سنة</span>
                     </div>
                 </div> -->
-            <!-- </div> -->
-
-            <div class="plan__box">
-                <svg class="plan__icon fill-mainColor">
-                    <use xlink:href="../img/sprite.svg#icon-inbox"></use>
-                </svg>
-                <h1 class="plan__name">بيسيك</h1>
-                <div class="self-start">
-                    <p class="plan__price-start">تبدأ من</p>
-                    <span class="plan__price-number">250</span>
-                    <span class="plan__price-currency">د.ك / سنة</span>
-                </div>
             </div>
 
-            <div class="plan__box">
-                <svg class="plan__icon fill-goldColor">
-                    <use xlink:href="../img/sprite.svg#icon-star"></use>
-                </svg>
-                <h1 class="plan__name">بريميوم</h1>
-                <div class="self-start">
-                    <p class="plan__price-start">تبدأ من</p>
-                    <span class="plan__price-number">350</span>
-                    <span class="plan__price-currency">د.ك / سنة</span>
+            <div>
+                <div class="plan__box plan__box--front ">
+                    <svg class="plan__icon fill-mainColor">
+                        <use xlink:href="../img/sprite.svg#icon-inbox"></use>
+                    </svg>
+                    <h1 class="plan__name">بيسيك</h1>
+                    <div class="self-start">
+                        <p class="plan__price-start">تبدأ من</p>
+                        <span class="plan__price-number">250</span>
+                        <span class="plan__price-currency">د.ك / سنة</span>
+                    </div>
                 </div>
+
+                <!-- <div class="plan__box">
+                    <svg class="plan__icon fill-mainColor">
+                        <use xlink:href="../img/sprite.svg#icon-inbox"></use>
+                    </svg>
+                    <h1 class="plan__name">بيسيك</h1>
+                    <div class="self-start">
+                        <p class="plan__price-start">تبدأ من</p>
+                        <span class="plan__price-number">250</span>
+                        <span class="plan__price-currency">د.ك / سنة</span>
+                    </div>
+                </div> -->
             </div>
 
-            <div class="plan__box">
-                <svg class="plan__icon fill-blueColor">
-                    <use xlink:href="../img/sprite.svg#icon-mobile"></use>
-                </svg>
-                <h1 class="plan__name">تطبيق الموبايل</h1>
-                <div class="self-start">
-                    <p class="plan__price-start">تبدأ من</p>
-                    <span class="plan__price-number">450</span>
-                    <span class="plan__price-currency">د.ك / سنة</span>
+            <div>
+                <div class="plan__box plan__box--front">
+                    <svg class="plan__icon fill-goldColor">
+                        <use xlink:href="../img/sprite.svg#icon-star"></use>
+                    </svg>
+                    <h1 class="plan__name">بريميوم</h1>
+                    <div class="self-start">
+                        <p class="plan__price-start">تبدأ من</p>
+                        <span class="plan__price-number">350</span>
+                        <span class="plan__price-currency">د.ك / سنة</span>
+                    </div>
                 </div>
+
+                <!-- <div class="plan__box">
+                    <svg class="plan__icon fill-goldColor">
+                        <use xlink:href="../img/sprite.svg#icon-star"></use>
+                    </svg>
+                    <h1 class="plan__name">بريميوم</h1>
+                    <div class="self-start">
+                        <p class="plan__price-start">تبدأ من</p>
+                        <span class="plan__price-number">350</span>
+                        <span class="plan__price-currency">د.ك / سنة</span>
+                    </div>
+                </div> -->
+            </div>
+
+            <div class="relative">
+                <div class="plan__box plan__box--front  absolute top-0 left-0">
+                    <svg class="plan__icon fill-blueColor">
+                        <use xlink:href="../img/sprite.svg#icon-mobile"></use>
+                    </svg>
+                    <h1 class="plan__name">تطبيق الموبايل</h1>
+                    <div class="self-start">
+                        <p class="plan__price-start">تبدأ من</p>
+                        <span class="plan__price-number">450</span>
+                        <span class="plan__price-currency">د.ك / سنة</span>
+                    </div>
+                </div>
+<!-- 
+                <div class="plan__box plan__box--back hover:plan__box--back-effect absolute top-0 left-0">
+                    <svg class="plan__icon fill-blueColor">
+                        <use xlink:href="../img/sprite.svg#icon-mobile"></use>
+                    </svg>
+                    <h1 class="plan__name">تطبيق الموبايل</h1>
+                    <div class="self-start">
+                        <p class="plan__price-start">تبدأ من</p>
+                        <span class="plan__price-number">450</span>
+                        <span class="plan__price-currency">د.ك / سنة</span>
+                    </div>
+                    <h1 class="text-3xl">amjad</h1>
+                </div> -->
             </div>
 
         </div>
     </section>
 
-    <section class="bg-red-800 col-start-2 col-end-12">
-        features
+    <section class="bg-backColor col-span-full grid grid-cols-6 grid-rows-6">
+        <div class="col-start-2 col-end-6 bg-whiteColor row-start-1 row-end-6 grid grid-cols-6 grid-rows-6">
+            <div class="col-start-1 col-end-4 bg-whiteColor row-start-1 row-end-6 grid grid-cols-6 grid-rows-6 justify-items-center items-center">
+                    <input placeholder="الاسم" class="contact__input self-end py-3 pr-7 row-start-2 row-end-3 col-span-full w-[70%] h-[3.5rem]" type="text">
+                    <div class="row-start-3 row-end-4 self-center col-span-full w-[73%] flex">
+                        <input placeholder="الموبايل" class="contact__input text-end py-3 pl-7  w-[80%] h-[3.5rem]" type="text">
+                        <span class="row-start-3 row-end-4 bg-mainColor rounded-3xl text-pxl font-bold mr-2 w-[20%] h-[3.5rem] pt-5 text-center text-whiteColor">963 +</span>
+                    </div>
+                    <input placeholder="البريد الإلكتروني" class="contact__input self-start py-3 pr-7 row-start-4 row-end-5 col-span-full w-[70%] h-[3.5rem]" type="text">
+                    <input placeholder="اترك تعليق" class="contact__input -mt-8 self-start pr-7 row-start-5 row-end-6 col-span-full w-[70%] h-full" type="text">
+                    <a class="btn_full self-start col-span-full row-start-6 row-end-7 w-[70%] rounded-3xl" href="#">ارسل الطلب</a>
+            </div>
+
+            <div class="col-start-4 col-end-7 bg-whiteColor row-start-1 row-end-6 grid grid-cols-6 grid-rows-6">
+                <h1 class="col-start-1 col-end-6 row-start-1 row-end-2  text-6xl text-fontColor font-bold self-end">لنتفق على التفاصيل </h1>
+                <p class="text-pxl leading-10 text-parColor row-start-2 row-end col-start-1 col-end-6 self-center">
+                    متواجدون لخدمتك على مدار 24 ساعة يمكنك التواصل معنا عبر اتصالٍ هاتفي أو حجز موعد
+                </p>
+                <div class="row-start-3 row-end-7 col-start-1 col-end-7">
+                    <img class="h-full w-full object-fill" src="../img/contact.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-start-2 col-end-6 row-start-6 row-end-7 bg-backColor grid grid-rows-2 justify-items-center items-end">
+            <h1 class="font-bold text-3xl text-fontColor self-center">كما هو مبين على الشركات المنتسبة</h1>
+            <div class="grid grid-flow-col gap-8 justify-items-center items-end self-end w-full justify-evenly">
+                <svg class="advantage__icon">
+                    <use xlink:href="../img/sprite.svg#icon-credit-card"></use>
+                </svg>
+                <svg class="advantage__icon">
+                    <use xlink:href="../img/sprite.svg#icon-credit-card"></use>
+                </svg> 
+                <svg class="advantage__icon">
+                    <use xlink:href="../img/sprite.svg#icon-credit-card"></use>
+                </svg> 
+                <svg class="advantage__icon">
+                    <use xlink:href="../img/sprite.svg#icon-credit-card"></use>
+                </svg> 
+                <svg class="advantage__icon">
+                    <use xlink:href="../img/sprite.svg#icon-credit-card"></use>
+                </svg>
+                
+            </div>
+        </div>
     </section>
 
-    <section class="bg-slate-400 col-start-2 col-end-12 ">
-        sales
-    </section>
+    <footer class="col-span-full bg-footerColor grid">
+        <div class="grid grid-cols-6 grid-rows-6 ">
+                <ul class="grid grid-cols-footer col-start-2 col-end-6 row-start-1 row-end-5 justify-items-center items-center">
+                    <li><img src="../img/logo-almanasah-2.png" alt=""></li>
+                    <li class="footer__li">الدعم</li>
+                    <li class="footer__li">التواصل</li>
+                    <li class="footer__li">الموقع</li>
+                    <li class="footer__li">متاح على</li>
+                    <li class="footer__li">للعمل معنا</li>
+                </ul>
+            
+                <div class="col-start-2 col-end-6 row-satrt-5 row-end-6 border-t-[1px] border-gray-300 grid grid-cols-footer items-center justify-between">
+                    <h1 class="text-whiteColor text-2xl">جميع الحقوق محفوظة © منصتي 2023</h1>
+                    <div class="grid grid-flow-col justify-items-end grid-cols-3 items-end">
+                        <h1 class="text-whiteColor text-2xl col-start-2 col-end-3">الشروط والأحكام</h1>
+                        <h1 class="text-whiteColor text-2xl col-start-3 col-end-4"> سياسة الخصوصية</h1>
+                    </div>
+                </div>
 
-    <section class="bg-slate-500 col-span-full ">
-        contact
-    </section>
+        </div>
+    </footer>
 
-    <section class="bg-blue-700 col-span-full row-start-10 row-end-11">
-        footer
-    </section>
 
 
 </body>
